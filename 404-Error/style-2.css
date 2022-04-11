@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	
+	margin: 0;
+	padding:0;
+	background-color:#0F1934;
+}
+
+
+section{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+}
+
+#snow1 {
+	position: absolute;
+	max-width: 50%;
+	max-height: 50%;
+	animation: snow-1 5s ease-out normal;
+	z-index: 2;
+
+}
+
+#main-snow-sign {
+	position: absolute;
+max-width: 50%;
+	max-height: 50%;
+	z-index: 1;
+
+	
+}
+
+#falling-snow {
+	position: absolute;
+	max-width: 50%;
+	height: auto;
+	z-index: -1;
+	object-fit: cover;
+  object-position: top;
+}
+
+#background-snow {
+	position: absolute;
+	max-width: 50%;
+	max-height: 50%;
+	z-index: -2;
+}
+@keyframes snow-1{
+	
+    	0%{
+		bottom: 0px;
+		
+	}
+	
+		100%{
+		bottom: 2000px;
+		
+	}
+
+}
